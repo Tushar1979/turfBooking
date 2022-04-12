@@ -1,0 +1,55 @@
+@import url('bootstrap/dist/css/bootstrap.css');
+@import url('./header/header.css');
+
+
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    color: #797979;  
+    width: 100%;
+    padding: 0 !important;
+    background: #ffffff;
+    transition: all 0.5s;
+  }
+  
+  a {
+    color: #797979;
+    font-family: "Helvetica", sans-serif;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.5s;
+  }
+  
+  a:hover, a:focus {
+    color: #797979;
+  }
+  
+  i:before {
+    margin-left: 0 !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.1;
+    font-weight: 400;
+    color: #797979;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p, a {
+    margin: 0;
+    padding: 0;
+    color: #797979;
+  }
+  
+  p {
+    font-family: "Helvetica", sans-serif;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
