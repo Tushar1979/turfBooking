@@ -37,7 +37,7 @@ header .top_header .top_row .Column ul{
     display: flex;
     column-gap: 25px;
 }
-header .top_header .top_row .Column ul li{
+header .top_header .top_row .Column ul li {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -45,6 +45,9 @@ header .top_header .top_row .Column ul li{
     font-size: 13px;
     line-height: 1em;
     letter-spacing: 1px;
+}
+header .top_header .top_row .Column ul li a{
+  color: #FFFFFF;
 }
 header .main_header{
     padding: 15px 0;

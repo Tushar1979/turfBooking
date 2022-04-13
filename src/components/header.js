@@ -38,14 +38,14 @@ export default function Header(porps){
                             <div className="Column">
                                 <ul>
                                     <li>
-                                        {/* <Link to="singIn"> */}
+                                        <Link to="singIn">
                                             Sing Up
-                                        {/* </Link> */}
+                                        </Link>
                                     </li>
                                     <li>
-                                        {/* <Link to="singIn"> */}
+                                        <Link to="singIn">
                                             Log In
-                                        {/* </Link> */}
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
