@@ -1,0 +1,71 @@
+.user {
+    background: #ffffff;
+    padding: 90px 0px;
+}
+
+.titlepage {
+    padding-bottom: 60px;
+}
+
+.titlepage h2 {
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.user .main_form {
+    background: #fff;
+   box-shadow: #ddd 0px 0px 19px 1px;
+   padding: 40px;
+} 
+.fields{
+    display: block;
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.form-control.myForm {
+    /* border: #02b8a5 solid 1px; */
+    /* border-radius: inherit; */
+    margin-bottom: 30px;
+    /* padding: 13px 20px; */
+    font-family: poppins;
+    transition: all .4s ease;
+
+}
+.form-control:focus {
+    /* box-shadow: inherit; */
+    border: #02b8a5 solid 1px !important;
+}
+
+.textarea {
+    font-family: poppins;
+    border: #02b8a5 solid 2px;
+    margin-bottom: 30px;
+    padding: 13px 20px;
+    width: 100%;
+    padding-top: 40px;
+} 
+
+.send {
+    font-family: poppins;
+   max-width: 212px;
+   margin: 0 auto;
+   display: block;
+   background: #02b8a5;
+   color: #fff;
+   padding: 12px 0px;
+   width: 100%;
+   font-size: 17px;
+   border-radius: 9px;
+   border: #02b8a5 solid 1px !important;
+   transition: all .4s ease;
+
+
+
+}
+
+.send:hover {
+    background: #029585;
+}

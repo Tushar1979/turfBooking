@@ -43,7 +43,7 @@ export default function Header(porps){
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="singIn">
+                                        <Link to="singin">
                                             Log In
                                         </Link>
                                     </li>
