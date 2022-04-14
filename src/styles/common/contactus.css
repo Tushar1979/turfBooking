@@ -1,0 +1,47 @@
+.contactMain{
+    /* background: linear-gradient(to bottom right, #2d886e 0%, #2d886e 60%, #4BC2A0 100%); */
+    width: 100%;
+    padding: 60px;
+}
+.contactMain .subtext{
+    font-size: 1.2rem;
+}
+.contactMain .info .subtitle{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1.25rem 0 1rem;
+}
+.contactMain .info .link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.contactMain .info .link .subinfo {
+    font-size: 1rem;
+    padding: 0;
+}
+
+.contactMain .side-form-wrapper{
+    max-width: 75%;
+    margin-left: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0 12px 5px #00000040;
+}
+
+.contactMain .side-form-wrapper .side-form-header .title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #121212;
+    text-align: center;
+}
+.contactMain .side-form-wrapper .side-form-header .subtext {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+.contactMain .side-form-wrapper .form-footer{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}

@@ -1,0 +1,77 @@
+footer{
+    padding: 60px 0 50px;
+    background-color: #4BC2A0;
+    position: relative;
+    z-index: 2;
+}
+footer::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../../images/footer/footerImg.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    z-index: -1;
+}
+footer .footer_content h4{
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+footer .footer_content p{
+    color: #FFFFFF;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+footer .footer_content .list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+footer .footer_content .list li{ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 18px;
+}
+footer .footer_content .list li span{ 
+    color: #FFFFFF;
+}
+footer .footer_content .inputType{
+   margin-top: 20px;
+}
+footer .footer_content .inputType input{
+   width: calc(100% - 90px);
+   height: 40px;
+   float: left;
+   border-radius: 10px 0 0px 10px;
+   border: none;
+   padding-left: 15px;
+}
+footer .footer_content .inputType .FooterBtn{
+    width: 90px;
+    float: left;
+}
+footer .footer_content .inputType .FooterBtn .main_btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.bottom_Footer{
+    background-color: #2d886e;
+}
+.bottom_Footer .bottom_text{
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    margin: 0;
+    color: #FFFFFF;
+    display: block;
+    /* margin-top: 10px; */
+}
