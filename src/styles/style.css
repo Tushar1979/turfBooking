@@ -1,6 +1,11 @@
 @import url('bootstrap/dist/css/bootstrap.css');
-@import url('./header/header.css');
+@import url('./animat/animate.min.css');
+@import url('./common/header/header.css');
+@import url('./common/footer/footer.css');
 @import url('./singin/singin.css');
+@import url('./slider.css');
+@import url('./common/aboutus.css');
+@import url('./common/contactus.css');
 
 
 body {
@@ -53,4 +58,20 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+  }
+  .heading{
+    margin-bottom: 30px;
+  }
+  .heading h2{
+    color: #F3F3F3;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 0em;
+  }
+  .heading h4{
+    color: #4C4C4C;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -10px;
   }
