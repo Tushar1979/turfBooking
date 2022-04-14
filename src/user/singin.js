@@ -1,6 +1,14 @@
+import { useState } from "react"
 import soccer from "../images/login/soccer.webp"
 
 export default function SigningIn() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    console.log(email);
+    console.log(password);
+
+
+    
 
     return (
         <>
@@ -21,23 +29,35 @@ export default function SigningIn() {
                                             <div className="titlepage">
                                                 <h3>Login</h3>
                                             </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                {/* <label className="inputlable">Email</label> */}
-                                                <input className="form-control myForm" placeholder="Your Email" type="email" name="Email" pattern="[^ @]*@[^ @]*" required />
-                                            </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                {/* <label className="inputlable">Password</label> */}
-                                                <input className="form-control myForm" placeholder="Password" type="password" name="Password" required />
+
+                                            <div className="form-body">
+                                                <form className="form-content">
+                                                    <div className="field">
+                                                        <input type="password" id="password" name="password" placeholder="Password" required onChange={(e)=>setEmail(e.target.value)} />
+                                                        <label htmlFor="password">Your password</label>
+                                                    </div>
+
+
+                                                    <div className="field">
+                                                        <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required onChange={(e)=>setPassword(e.target.value)} />
+                                                        <label htmlFor="email">Your email</label>
+                                                    </div>
+
+
+                                                    <div className="form-footer">
+                                                        <button type="submit" className="main_btn send-btn">
+
+                                                            <span className="btn-text">Send</span>
+                                                        </button>
+                                                        <br />
+                                                        <a className="forgot" href="#">Forgot Password?</a>
+                                                        <p className="P_tag">Don't have an account?
+                                                            <a href="#">Sign Up</a>
+                                                        </p>
+                                                    </div>
+                                                </form>
                                             </div>
 
-                                            <div className=" col-md-12">
-                                                <button className="send">Login</button>
-                                            </div>
-                                            <br />
-                                            <a className="forgot" href="#">Forgot Password?</a>
-                                            <p>Don't have an account?
-                                                <a href="#">Sign Up</a>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -51,6 +71,7 @@ export default function SigningIn() {
 }
 
 export function SigningUp() {
+
     return (
         <>
             <div className="user">
@@ -70,33 +91,59 @@ export function SigningUp() {
                                             <div className="titlepage">
                                                 <h3>SignUp</h3>
                                             </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                <input className="form-control myForm" placeholder="First Name" type="text" name="First Name" />
+                                            <div class="container">
+
+                                                <div className="form-body">
+
+                                                    <form className="form-content">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div className="field">
+                                                                    <input type="text" id="First Name" name="First Name" placeholder="First Name" required />
+                                                                    <label htmlFor="First Name">Your name</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div className="field">
+                                                                    <input type="text" id="Last Name" name="Last Name" placeholder="Last Name" required />
+                                                                    <label htmlFor="Last Name">Your surname</label>
+                                                                </div>
+                                                            </div>
+                                                            <div className="field">
+                                                                <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required />
+                                                                <label htmlFor="email">Your email</label>
+                                                            </div>
+                                                            <div className="field">
+                                                                <input type="text" id="phone" name="phone" placeholder="phone" required />
+                                                                <label htmlFor="phone">Your Phone no.</label>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div className="field">
+                                                                    <input type="password" id="password" name="password" placeholder="Password" required />
+                                                                    <label htmlFor="password">Enter password</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div className="field">
+                                                                    <input type="password" id="re-type password" name="re-type password" placeholder="Confirm Password" required />
+                                                                    <label htmlFor="re-type password">Re-type password</label>
+                                                                </div>
+                                                            </div>
+                                                            <div className="form-footer">
+                                                                <button type="submit" className="main_btn send-btn">
+
+                                                                    <span className="btn-text">Send</span>
+                                                                </button>
+                                                                <br />
+                                                                <a className="forgot" href="#">Forgot Password?</a>
+                                                                <p className="P_tag">Already have an account?
+                                                                    <a href="#">Login</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                <input className="form-control myForm" placeholder="Last Name" type="text" name="Last Name" />
-                                            </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                <input className="form-control myForm" placeholder="Email" type="email" name="Email" pattern="[^ @]*@[^ @]*" />
-                                            </div>
-                                            <div className=" col-md-6">
-                                                <input className="form-control myForm" placeholder="Phone No." type="number" name="Phone" min={0}
-                                                    onInput={(e) => e.target.value = e.target.value.slice(0, 10)}
-                                                    maxLength={10} required />
-                                            </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                <input className="form-control myForm" placeholder="Password" type="password" name="Password" />
-                                            </div>
-                                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                                                <input className="form-control myForm" placeholder="Confirm Password" type="password" name="Confirm Password" />
-                                            </div>
-                                            <div className=" col-md-12">
-                                                <button className="send">Submit</button>
-                                            </div>
-                                            <br />
-                                            <p>Already have an account?
-                                                <a href="#">Login</a>
-                                            </p>
                                         </div>
                                     </div>
                                 </div>

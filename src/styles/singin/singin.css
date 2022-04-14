@@ -4,7 +4,8 @@
 }
 
 .titlepage {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    padding-top: 10px;
 }
 
 .titlepage h3 {
@@ -53,10 +54,10 @@
 
 }
 
-.form-control:focus {
-    /* box-shadow: inherit; */
-    /* border: #02b8a5 solid 1px !important; */
-}
+/* .form-control:focus 
+     box-shadow: inherit; 
+    border: #02b8a5 solid 1px !important; 
+ */
 
 .textarea {
     font-family: poppins;
@@ -139,4 +140,20 @@
     border-color: #ced4da;
     background: #ced4da8a;
 
-} 
+}
+
+.form-body {
+    width: 100%;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.send-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.P_tag {
+    margin-bottom: 40px;
+
+}
