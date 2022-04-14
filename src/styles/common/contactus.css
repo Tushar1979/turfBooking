@@ -40,72 +40,8 @@
     padding: 1rem 0;
 }
 
-.contactMain .side-form-wrapper .side-form-body .field {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-flow: column-reverse;
-    flex-flow: column-reverse;
-    margin-bottom: 0.5rem;
-    height: 3.25rem;
-    position: relative;
-}
-
-.contactMain .side-form-wrapper .side-form-body .field input, 
-.contactMain .side-form-wrapper .side-form-body .field textarea {
-    width: 100%;
-    font-size: 1rem;
-    border: 0;
-    border-bottom: 1px solid rgba(15, 54, 91, 0.4);
-    border-radius: 0;
-    background-color: transparent;
-    padding: 0!important;
-    height: 2rem;
-    cursor: text;
-    resize: none;
-}
-
-.contactMain .side-form-wrapper .side-form-body .field label {
-    margin: 0;
-    font-size: 0.5rem;
-    font-weight: 400;
-    color: rgba(15, 54, 91, 0.4);
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-}
-.contactMain .side-form-wrapper .side-form-body .field input:placeholder-shown+label, 
-.contactMain .side-form-wrapper .side-form-body .field textarea:placeholder-shown+label {
-    cursor: text;
-    max-width: 50%;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    -webkit-transform-origin: left bottom;
-    -ms-transform-origin: left bottom;
-    transform-origin: left bottom;
-    -webkit-transform: translate(0, 1.5rem) scale(2);
-    -ms-transform: translate(0, 1.5rem) scale(2);
-    transform: translate(0, 1.5rem) scale(2);
-}
-.contactMain .side-form-wrapper .side-form-body .field input:focus,
-.contactMain .side-form-wrapper .side-form-body .field textarea:focus {
-    outline: 0;
-    border-bottom: 2px solid #0F365B;
-}
-.contactMain .side-form-wrapper .field input:focus+label, 
-.contactMain .side-form-wrapper .field input:not(:placeholder-shown)+label, 
-.contactMain .side-form-wrapper .field textarea:focus+label, 
-.contactMain .side-form-wrapper .field textarea:not(:placeholder-shown)+label {
-    -webkit-transform: translate(0, 0) scale(1);
-    -ms-transform: translate(0, 0) scale(1);
-    transform: translate(0, 0) scale(1);
-    font-size: 0.8rem;
-    color: #0F365B;
-    cursor: pointer;
+.contactMain .side-form-wrapper .form-footer{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }

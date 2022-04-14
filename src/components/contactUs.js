@@ -1,8 +1,27 @@
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faEnvelope, faPhone, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Icon from "../utils/icons";
 
 export default function ContactUs(props){
+    const [sendLodding , setSendLodding] = useState(false);
+    const [sendSuccess , setSendSuccess] = useState(false);
+    const [sendText , setSendText] = useState(true);
+    async function Submitbtn(){
+        setSendText(false)
+        setSendLodding(true)
+        setTimeout(()=>{
+            setSendLodding(false)
+            setSendSuccess(true)
+        },2000)
+        setTimeout(()=>{
+            setSendSuccess(false)
+            setSendText(true)
+        },3000)
+        // useEffect(()=>{
+        //     set
+        // })
+    }
     return(
         <>
             <section className="contactMain">
@@ -43,7 +62,7 @@ export default function ContactUs(props){
                                             <label htmlFor="name">Your name</label>
                                         </div>
                                         <div className="field">
-                                            <input type="number" minLength={10} maxLength={10} id="mobile" name="mobile" placeholder="123-456-7890" required />
+                                            <input type="tel" minLength={10} maxLength={10} id="mobile" name="mobile" placeholder="123-456-7890" required />
                                             <label htmlFor="mobile">Your phone</label>
                                         </div>
                                         <div className="field">
@@ -51,14 +70,14 @@ export default function ContactUs(props){
                                             <label htmlFor="email">Your email</label>
                                         </div>
                                         <div className="field">
-                                            <textarea rows={10} id="message" name="message" placeholder="Leave your message here" required defaultValue={""} />
+                                            <textarea id="message" name="message" placeholder="Leave your message here" required defaultValue={""} />
                                             <label htmlFor="message">Message</label>
                                         </div>
                                         <div className="form-footer">
-                                            <button type="submit" className="btn btn-default send-btn">
-                                                <img src="assets/images/icon/loader.svg" className="icon loader-icon" />
-                                                <img src="assets/images/icon/right.svg" className="icon right-icon" style={{display: 'none'}} />
-                                                <span className="btn-text">Send</span>
+                                            <button type="submit" className="main_btn send-btn" onClick={()=>Submitbtn()}>
+                                                {sendLodding&&<Icon icon={faSpinner} className={ "fa-spin"}/>}
+                                                {sendSuccess&& <Icon icon={faCheck}/>}
+                                                {sendText&&<span className="btn-text">Send</span>}
                                             </button>
                                             <div className="mt--10"><small className="msg-box" /></div>
                                         </div>
