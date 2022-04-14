@@ -5,6 +5,7 @@ import Bg1 from "../images/slider/banner/bannerBG1.jpg"
 import Bg2 from "../images/slider/banner/bannerBG2.jpg"
 import AboutUs from "../components/aboutUs";
 import ContactUs from "../components/contactUs";
+import Member from "../components/member";
 function SampleNextArrow(props) {
     console.log(props);
     const { className, style, onClick } = props;
@@ -71,6 +72,7 @@ export default function Home(props){
                 </Slider>
             </div>
             <AboutUs />
+            <Member />
             <ContactUs/>
         </>
     );
